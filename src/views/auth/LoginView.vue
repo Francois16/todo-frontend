@@ -8,8 +8,8 @@ const auth = useAuthStore();
 const router = useRouter();
 
 const errors = ref(null);
-const email = ref("admin@email.com");
-const password = ref("admin");
+const email = ref("");
+const password = ref("");
 
 async function login() {
   try {
