@@ -48,8 +48,8 @@ onBeforeMount(() => {
             />
           </div>
 
-          <div v-auto-animate class="flex flex-col gap-4 text-white">
-            <div
+          <ul v-auto-animate class="flex flex-col gap-4 text-white">
+            <li
               v-for="todo in todos"
               :key="todo.id"
               class="flex items-center justify-between p-4 rounded bg-dark-grey"
@@ -71,8 +71,8 @@ onBeforeMount(() => {
                   class="duration-200 hover:(text-red-600) cursor-pointer"
                 />
               </div>
-            </div>
-          </div>
+            </li>
+          </ul>
         </main>
       </div>
     </div>
