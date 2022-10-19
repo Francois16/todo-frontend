@@ -19,8 +19,8 @@ async function deleteTodo(id) {
   try {
     // const resp = await axios.delete(`/todo/delete/${id}`);
 
-    const todoToRemove = todos.value.find((todo) => todo.id == id);
-    todos.value.pop(todoToRemove);
+    const index = todos.value.findIndex((todo) => todo.id == id);
+    todos.value.splice(index, 1);
   } catch (error) {
     console.log("[ERROR]", error);
   }
