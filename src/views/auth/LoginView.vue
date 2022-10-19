@@ -54,11 +54,8 @@ async function demoLogin() {
         class="bg-white rounded-lg flex flex-col shadow-lg p-4 gap-4"
         @submit.prevent="login"
       >
-        <div class="font-extrabold text-center text-5xl mt-5 font-display">
+        <div class="font-extrabold text-center text-5xl my-5 font-display">
           Login
-        </div>
-        <div class="self-center bg-sky-400 p-6 rounded-full my-5">
-          <Icon icon="wpf:todo-list" class="w-20 h-20" />
         </div>
         <p class="text-center text-red-600" v-if="errors">{{ errors }}</p>
         <input
