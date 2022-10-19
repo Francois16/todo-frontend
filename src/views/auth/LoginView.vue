@@ -47,7 +47,7 @@ async function demoLogin() {
 <template>
   <main class="bg-light min-h-screen relative">
     <div
-      class="container transform top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 absolute"
+      class="container transform top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 absolute max-w-lg"
     >
       <form
         v-auto-animate

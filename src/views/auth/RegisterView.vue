@@ -30,7 +30,7 @@ async function register() {
 <template>
   <main class="bg-light min-h-screen relative">
     <div
-      class="container transform top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 absolute"
+      class="container transform top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 absolute max-w-lg"
     >
       <form
         v-auto-animate
@@ -68,9 +68,9 @@ async function register() {
           Register
         </button>
 
-        <span class="text-sm self-end"
+        <span class="text-xs self-end"
           >Already a user?
-          <RouterLink class="text-sky-400 underline" to="/login"
+          <RouterLink class="text-sky-400 underline ml-1" to="/login"
             >Login</RouterLink
           ></span
         >
